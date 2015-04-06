@@ -1,0 +1,48 @@
+<!-- historical artifact - ignore -->
+<!DOCTYPE html>
+
+<!-- root element -->
+<html>  
+  <!-- head acts as a container for all the stuff you want to include on the HTML page that isn't the content you are showing to your page's viewers. This includes things like keywords and a page description that you want to appear in search results, CSS to style our content, characterset declarations, and more. -->
+  <head>
+
+  	<!-- Link to our CSS file -->
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+	
+ 	<!-- Our selected font -->
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+
+	 <!-- sets the character set your document should use, to utf-8, which includes pretty much all characters from all known human languages -->
+    <meta charset="utf-8">
+
+    <!-- title that appears in the browser tab the page is loaded in -->
+    <title>Last Man Standing</title>
+
+  </head>
+
+  <!-- body contains all the content that you want to show to web users when they visit your page, whether that's text, images, videos, games, playable audio tracks -->
+  <body>
+
+  	<h1>Last Man Standing</h1>
+
+	<!--img tags are empty elements. They don't wrap content -->
+    <img src="images/pitch-sml.jpg" alt="Close up of football pitch markings">
+
+    <p class="rules">Pick the winner of one Premier League or Championship match each week. If your selection wins you progress to the next week, lose or draw and you're <strong>out</strong>.</p>
+
+    <ul>
+    	<li>Chelsea</li>
+    	<li>Arsenal</li>
+    	<li>Man City</li>
+    	<li>Man Utd</li>
+
+	<!-- a: anchor -->
+    <p>Check out the current <a href="http://www.bbc.co.uk/sport/football/tables">Premier League</a> table </p>
+
+    <button>Change user</button>
+
+    <!-- The reason we've put the <script> element near the bottom of the HTML file is that HTML is loaded by the browser in the order it appears in the file. If the JavaScript is loaded first and it is supposed to affect the HTML below it, it might not work, as the JavaScript would be loaded before the HTML it is supposed to work on. Near the bottom of the page is usually the best strategy. -->
+	<script src="scripts/main.js"></script>
+
+  </body>
+</html>

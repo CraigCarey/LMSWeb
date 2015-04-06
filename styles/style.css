@@ -1,0 +1,57 @@
+/* Whole structure is called a rule set */
+/*p,li,h1 { /* Selector (p is paragraph element name in html file) */  
+/*  color: red;				 /*Declaration - single rule */
+/*  width: 500px;				/* Property: Property value */
+/*  border: 1px solid black;
+}*/
+
+/* Base rule for whole page */
+html {
+  font-size: 10px; /* px means 'pixels': the base font size is now 10 pixels high  */
+  font-family: 'Droid Sans', sans-serif;
+}
+
+/* Custom rule for header 1 elements */
+h1 {
+  font-size: 60px;
+  text-align: center;
+  /* Overrides browser default styling, removing gap at top */
+  margin: 0;
+  padding: 20px 0;    
+  color: #299129;
+  text-shadow: 3px 3px 3px black;
+}
+
+/* Custom rule for paragraphs and lists */
+p, li {
+  font-size: 16px;    
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+/* Not all base rule declarations have to be in the same rule set */
+html {
+  background-color: #299129;
+}
+
+/* Customise everthing inside the body tags of the html doc */
+body {
+  width: 500px;
+  margin: 0 auto;
+  background-color: #33B533;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+
+/* Centre-align all images */
+img {
+  /* Images are inline elements, to apply margins to the image, we have to give the image
+  block-level behavior  */
+  display: block;
+  margin: 0 auto;
+}
+
+/* Customise all anchors */
+a {
+	font-size: 20px;
+}
